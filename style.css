@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #120e0b; /* Fundo escuro avermelhado */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1c140f;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #c1440e; /* Laranja Marte */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #c1440e;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c1440e;
+}
+
+#hero {
+    background: linear-gradient(rgba(18, 14, 11, 0.7), rgba(18, 14, 11, 0.9)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    color: #c1440e;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.section-card {
+    background-color: #1c140f;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border-left: 5px solid #c1440e;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    scroll-margin-top: 90px; /* Evita que o cabeçalho fixo cubra o título ao navegar */
+}
+
+.section-card h2 {
+    color: #c1440e;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #33221a;
+    padding-bottom: 0.5rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.placeholder-image {
+    background-color: #2b1f17;
+    border: 2px dashed #4a3525;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    color: #a08070;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #0b0806;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #1c140f;
+}
