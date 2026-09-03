@@ -3,98 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vida em Marte - Guia de Colonização</title>
+    <title>Missão Marte: A Nova Fronteira</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Missão Marte 2026</h1>
-            <nav>
-                <ul>
-                    <li><a href="#visao-geral">Visão Geral</a></li>
-                    <li><a href="#habitacao">Habitação</a></li>
-                    <li><a href="#alimentacao">Alimentação</a></li>
-                    <li><a href="#vestuario">Vestuário</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    <header class="navbar">
+        <div class="logo">MARS<span>2050</span></div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#habitat">Habitats</a></li>
+                <li><a href="#stats">Dados do Planeta</a></li>
+                <li><a href="#timeline">Fases</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="hero-section">
         <div class="hero-content">
-            <h2>O Próximo Passo da Humanidade</h2>
-            <p>Explore as tecnologias e soluções para a sobrevivência e colonização do Planeta Vermelho.</p>
+            <h1>O FUTURO DA HUMANIDADE É <span class="highlight">VERMELHO</span></h1>
+            <p>Junte-se à primeira geração de colonos na construção de uma civilização sustentável em Marte.</p>
+            <button id="cta-btn" class="btn-primary">Explorar Colônia</button>
         </div>
     </section>
 
-    <main class="container">
-        <section id="visao-geral" class="section-card">
-            <h2>Visão Geral do Planeta</h2>
-            <div class="grid-2">
-                <div>
-                    <p>Marte é um mundo desértico, frio e com uma atmosfera extremamente rarefeita composta principalmente por dióxido de carbono. A paisagem é marcada por imensos desertos de poeira rica em óxido de ferro, o que dá ao planeta sua cor avermelhada característica, além de possuir o maior vulcão do Sistema Solar, o Olympus Mons.</p>
-                    <p>O clima marcial é hostil, com temperaturas médias em torno de -62°C, podendo cair para até -140°C durante a noite nos polos. Tempestades de poeira globais podem cobrir o planeta por semanas, bloqueando a luz solar.</p>
-                </div>
-                <div class="placeholder-image">
-                    <span>[Imagem: Paisagem e Clima de Marte]</span>
-                </div>
+    <section id="habitat" class="cards-section">
+        <h2>Sistemas de Sobrevivência</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Domo de Biosfera</h3>
+                <p>Ambiente pressurizado com ecossistemas autossustentáveis para cultivo de alimentos e produção de oxigênio.</p>
             </div>
-        </section>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Energia Nuclear & Solar</h3>
+                <p>Matriz energética híbrida projetada para suportar as severas tempestades de poeira do planeta vermelho.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💧</div>
+                <h3>Extração de Água Subterrânea</h3>
+                <p>Tecnologia avançada para perfuração e derretimento do gelo localizado abaixo da superfície marciana.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="habitacao" class="section-card">
-            <h2>Habitação (Casas)</h2>
-            <div class="grid-2">
-                <div class="placeholder-image">
-                    <span>[Imagem: Domos e Estruturas Subterrâneas]</span>
-                </div>
-                <div>
-                    <p>Para proteger os colonos da radiação cósmica mortal e das variações extremas de temperatura, as habitações em Marte combinam engenharia avançada e o uso de recursos locais (SRE - Utilização de Recursos In Situ).</p>
-                    <ul>
-                        <li><strong>Regolito Marcial:</strong> As paredes externas serão impressas em 3D utilizando o próprio solo de Marte, misturado com ligantes biológicos, criando uma blindagem espessa contra radiação.</li>
-                        <li><strong>Estruturas Subterrâneas:</strong> Uso de tubos de lava naturais como abrigos para módulos residenciais, fornecendo proteção térmica natural estável.</li>
-                        <li><strong>Domos Pressurizados:</strong> Áreas comuns com múltiplas camadas de polímeros autorregenerativos e sistemas ativos de suporte à vida.</li>
-                    </ul>
-                </div>
+    <section id="stats" class="stats-section">
+        <h2>Estatísticas de Marte</h2>
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-number" data-target="225">0</span>
+                <span class="stat-unit">mi km</span>
+                <p>Distância Média da Terra</p>
             </div>
-        </section>
+            <div class="stat-box">
+                <span class="stat-number" data-target="38">0</span>
+                <span class="stat-unit">%</span>
+                <p>Gravidade Terrestre</p>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" data-target="-63">0</span>
+                <span class="stat-unit">°C</span>
+                <p>Temperatura Média</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="alimentacao" class="section-card">
-            <h2>Alimentação (Comida)</h2>
-            <div class="grid-2">
-                <div>
-                    <p>A autossuficiência alimentar é crucial. Como o solo de Marte contém percloratos tóxicos, a produção de alimentos ocorrerá em ambientes fechados e controlados, livres de contaminantes externos.</p>
-                    <ul>
-                        <li><strong>Estufas Hidropônicas e Aeropônicas:</strong> Cultivo de vegetais (como batata, tomate e folhas verdes) em soluções de água enriquecida com nutrientes ou suspensos no ar, otimizando o espaço e o consumo de água.</li>
-                        <li><strong>Laboratórios de Carne Cultivada:</strong> Produção de proteínas animais a partir de células cultivadas em biorreatores, eliminando a necessidade de pecuária tradicional.</li>
-                        <li><strong>Cianobactérias e Algas:</strong> Cultivo de espirulina e outras microalgas para suplementação nutricional rápida e alta produção de oxigênio.</li>
-                    </ul>
-                </div>
-                <div class="placeholder-image">
-                    <span>[Imagem: Estufas Tecnológicas em Marte]</span>
-                </div>
+    <section id="timeline" class="timeline-section">
+        <h2>Cronograma de Colonização</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">Fase 1 (2028-2032)</div>
+                <div class="timeline-content">Mapeamento orbitário, envio de rovers de sondagem e implantação de infraestrutura robótica inicial.</div>
             </div>
-        </section>
-
-        <section id="vestuario" class="section-card">
-            <h2>Vestuário (Roupas)</h2>
-            <div class="grid-2">
-                <div class="placeholder-image">
-                    <span>[Imagem: Trajes de Superfície e Roupas Internas]</span>
-                </div>
-                <div>
-                    <p>O vestuário em Marte divide-se estritamente entre a sobrevivência no exterior e o conforto nas áreas internas pressurizadas.</p>
-                    <ul>
-                        <li><strong>Ambiente Externo (Trajes EVA):</strong> Trajes espaciais de alta mobilidade com camadas de Kevlar, Nextel e polímeros avançados. Protegem contra o vácuo parcial, filtram a radiação ultravioleta e regulam a temperatura corporal por microcanais de líquido.</li>
-                        <li><strong>Ambiente Interno (Roupas Diárias):</strong> Tecidos leves, respiráveis e com propriedades antimicrobianas de longa duração (para reduzir a necessidade de lavagem com água preciosa). Incorporam fibras elásticas que ajudam a combater a perda de massa muscular na gravidade reduzida (38% da Terra).</li>
-                    </ul>
-                </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Fase 2 (2035-2040)</div>
+                <div class="timeline-content">Chegada dos primeiros 12 astronautas e montagem do Domo Alpha de habite.</div>
             </div>
-        </section>
-    </main>
+            <div class="timeline-item">
+                <div class="timeline-date">Fase 3 (2045+)</div>
+                <div class="timeline-content">Expansão para uma cidade autônoma com capacidade para mais de 10.000 residentes permanentemente.</div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Projeto Colonização de Marte. Desenvolvido para fins educacionais.</p>
+        <p>&copy; 2026 Missão Marte 2050. Todos os direitos reservados. Construindo o amanhã.</p>
     </footer>
 
     <script src="script.js"></script>
